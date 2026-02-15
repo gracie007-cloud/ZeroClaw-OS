@@ -20,7 +20,7 @@
 4. **Deploy from image**:
    - Instead of building from repo, use:
      ```
-     docker.io/agent0ai/agent-zero-x:latest
+     docker.io/agent0ai/zeroclaw:latest
      ```
    - Or build your own and push to Docker Hub/GHCR
 
@@ -37,7 +37,7 @@
 2. **Install Okteto CLI**: `curl https://get.okteto.com | sh`
 3. **Deploy**:
    ```bash
-   okteto stack deploy --deploy-image agent0ai/agent-zero-x
+   okteto stack deploy --deploy-image agent0ai/zeroclaw
    ```
 
 ---
@@ -54,13 +54,13 @@
 
 ```bash
 # Clone and rebrand
-git clone https://github.com/agent0ai/agent-zero-x.git
-cd agent-zero-x
-./rebrand.sh  # Changes "Agent ZERO V 2.2" to "Agent ZERO V 2.2"
+git clone https://github.com/agent0ai/zeroclaw.git
+cd zeroclaw
+./rebrand.sh  # Changes "ZeroClaw" to "ZeroClaw"
 
 # Build and push
-docker build -f Dockerfile.nuvho -t YOUR_USERNAME/agent-zero-x .
-docker push YOUR_USERNAME/agent-zero-x
+docker build -f Dockerfile.nuvho -t YOUR_USERNAME/zeroclaw .
+docker push YOUR_USERNAME/zeroclaw
 
 # Deploy to Render/Docker Hub/GHCR
 ```
@@ -76,7 +76,7 @@ GROQ_API_KEY=...                # For Groq models
 AZURE_OPENAI_KEY=...           # For Azure OpenAI
 
 # Optional
-NUVHO_BRAND_NAME=Agent ZERO V 2.2      # Your brand
+NUVHO_BRAND_NAME=ZeroClaw      # Your brand
 NUVHO_INACTIVITY_TIMEOUT=3600     # Auto-pause after 1 hour
 WEB_UI_PORT=80                  # Port (default 80)
 ```
@@ -86,7 +86,7 @@ WEB_UI_PORT=80                  # Port (default 80)
 ## Accessing Your Deployment
 
 - Render gives you a `.onrender.com` URL
-- Example: `nuvho-agent-zero-x.onrender.com`
+- Example: `nuvho-zeroclaw.onrender.com`
 
 ---
 

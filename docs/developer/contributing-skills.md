@@ -1,6 +1,6 @@
-# Contributing Skills to Agent ZERO V 2.2
+# Contributing Skills to ZeroClaw
 
-Welcome to the Agent ZERO V 2.2 Skills ecosystem! This guide will help you create, test, and share skills with the community.
+Welcome to the ZeroClaw Skills ecosystem! This guide will help you create, test, and share skills with the community.
 
 ---
 
@@ -20,7 +20,7 @@ A **Skill** is a contextual expertise module that provides the AI agent with spe
 ### Cross-Platform Compatibility
 
 The SKILL.md standard is compatible with:
-- **Agent ZERO V 2.2** (this project)
+- **ZeroClaw** (this project)
 - **Claude Code** (Anthropic)
 - **Cursor** (AI IDE)
 - **OpenAI Codex CLI**
@@ -227,7 +227,7 @@ This skill includes helper scripts:
 # Validate the skill
 python -m python.helpers.skills_cli validate my-awesome-skill
 
-# Test in Agent ZERO V 2.2
+# Test in ZeroClaw
 # Start the agent and ask it to perform the task your skill handles
 ```
 
@@ -285,7 +285,7 @@ One skill = one expertise area. If your skill is getting too long, split it:
    ```
 
 2. **Test Semantic Recall:**
-   Start Agent ZERO V 2.2 and ask questions that should trigger your skill.
+   Start ZeroClaw and ask questions that should trigger your skill.
 
 3. **Verify Instructions:**
    Follow your own instructions manually to ensure they work.
@@ -294,12 +294,12 @@ One skill = one expertise area. If your skill is getting too long, split it:
 
 ## Sharing Skills
 
-### Contributing to Agent ZERO V 2.2
+### Contributing to ZeroClaw
 
 1. **Fork the Repository:**
    ```bash
-   git clone https://github.com/agent0ai/agent-zero-x.git
-   cd agent-zero-x
+   git clone https://github.com/agent0ai/zeroclaw.git
+   cd zeroclaw
    ```
 
 2. **Create Your Skill:**

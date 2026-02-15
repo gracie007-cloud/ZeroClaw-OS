@@ -3,17 +3,17 @@
 ## Option 1: One-Click Deploy (Recommended)
 
 1. Click this button:
-   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/blueshirtprogrammer/agent-zero-x)
+   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/blueshirtprogrammer/zeroclaw)
 
 2. Or go manually:
    - Sign in to https://render.com
    - Click "New" → "Web Service"
-   - Connect your GitHub: `blueshirtprogrammer/agent-zero-x`
+   - Connect your GitHub: `blueshirtprogrammer/zeroclaw`
    - Settings:
      - Build Command: (leave empty - we're using pre-built image)
      - Start Command: `docker run -p $PORT:80 agent0ai/agent-zero:latest`
    - Add environment variables in the dashboard:
-     - `A0_BRAND_NAME` = `Agent ZERO V 2.2`
+     - `ZC_BRAND_NAME` = `ZeroClaw`
      - `OPENAI_API_KEY` = your key
      - `ANTHROPIC_API_KEY` = your key
 
@@ -27,15 +27,15 @@ Create a new Web Service on Render:
 
 | Setting | Value |
 |---------|-------|
-| Name | `agent-zero-x` |
+| Name | `zeroclaw` |
 | Region | `Oregon` (or closest to you) |
 | Environment | `Docker` |
 | Docker Image | `agent0ai/agent-zero:latest` |
 | Plan | `Free` |
 
 Add environment variables:
-- `A0_BRAND_NAME`: `Agent ZERO V 2.2`
-- `A0_INACTIVITY_TIMEOUT`: `3600`
+- `ZC_BRAND_NAME`: `ZeroClaw`
+- `ZC_INACTIVITY_TIMEOUT`: `3600`
 
 ---
 
@@ -54,7 +54,7 @@ GROQ_API_KEY=...               # Optional
 ## Access Your Deployment
 
 After deploy, you'll get a URL like:
-`https://agent-zero-x.onrender.com`
+`https://zeroclaw.onrender.com`
 
 ---
 

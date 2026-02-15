@@ -1,8 +1,8 @@
 services:
-  agent-zero-x:
-    container_name: agent-zero-x
-    image: agent0ai/agent-zero-x:latest
+  zeroclaw:
+    container_name: zeroclaw
+    image: agent0ai/zeroclaw:latest
     volumes:
-      - ./agent-zero-x:/a0
+      - ./zeroclaw:/a0
     ports:
       - "50080:80"

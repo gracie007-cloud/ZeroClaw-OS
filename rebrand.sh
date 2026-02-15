@@ -1,11 +1,11 @@
 #!/bin/bash
-# Rebranding script for Agent ZERO V 2.2
-# Run this to transform Agent ZERO V 2.2 into Agent ZERO V 2.2
+# Rebranding script for ZeroClaw
+# Run this to transform ZeroClaw into ZeroClaw
 
-OLD_NAME="Agent ZERO V 2.2"
-NEW_NAME="Agent ZERO V 2.2"
-OLD_NAME_LOWER="agent-zero-x"
-NEW_NAME_LOWER="nuvho-agent-zero-x"
+OLD_NAME="ZeroClaw"
+NEW_NAME="ZeroClaw"
+OLD_NAME_LOWER="zeroclaw"
+NEW_NAME_LOWER="nuvho-zeroclaw"
 
 echo "Rebranding $OLD_NAME to $NEW_NAME..."
 

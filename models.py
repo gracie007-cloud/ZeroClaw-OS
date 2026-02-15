@@ -832,8 +832,8 @@ def _adjust_call_args(provider_name: str, model_name: str, kwargs: dict):
     # for openrouter add app reference
     if provider_name == "openrouter":
         kwargs["extra_headers"] = {
-            "HTTP-Referer": "https://agent-zero-x.ai",
-            "X-Title": "Agent ZERO V 2.2",
+            "HTTP-Referer": "https://zeroclaw.ai",
+            "X-Title": "ZeroClaw",
         }
 
     # remap other to openai for litellm

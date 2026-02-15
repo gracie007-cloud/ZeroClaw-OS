@@ -1,11 +1,11 @@
 """
-PythonAnywhere WSGI configuration for Agent ZERO V 2.2
+PythonAnywhere WSGI configuration for ZeroClaw
 """
 import os
 import sys
 
 # Add your project directory to the path
-project_home = '/home/YOUR_USERNAME/agent-zero-x'
+project_home = '/home/YOUR_USERNAME/zeroclaw'
 if project_home not in sys.path:
     sys.path.insert(0, project_home)
 

@@ -13,14 +13,14 @@ BRANCH="$1"
 
 if [ "$BRANCH" = "local" ]; then
     # For local branch, use the files
-    echo "Using local dev files in /git/agent-zero-x"
+    echo "Using local dev files in /git/zeroclaw"
     # List all files recursively in the target directory
-    # echo "All files in /git/agent-zero-x (recursive):"
-    # find "/git/agent-zero-x" -type f | sort
+    # echo "All files in /git/zeroclaw (recursive):"
+    # find "/git/zeroclaw" -type f | sort
 else
     # For other branches, clone from GitHub
     echo "Cloning repository from branch $BRANCH..."
-    git clone -b "$BRANCH" "https://github.com/agent0ai/agent-zero-x" "/git/agent-zero-x" || {
+    git clone -b "$BRANCH" "https://github.com/agent0ai/zeroclaw" "/git/zeroclaw" || {
         echo "CRITICAL ERROR: Failed to clone repository. Branch: $BRANCH"
         exit 1
     }
@@ -35,12 +35,12 @@ fi
 # pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # Install remaining Nuvho python packages
-uv pip install -r /git/agent-zero-x/requirements.txt
+uv pip install -r /git/zeroclaw/requirements.txt
 # override for packages that have unnecessarily strict dependencies
-uv pip install -r /git/agent-zero-x/requirements2.txt
+uv pip install -r /git/zeroclaw/requirements2.txt
 
 # install playwright
 bash /ins/install_playwright.sh "$@"
 
 # Preload Nuvho
-python /git/agent-zero-x/preload.py --dockerized=true
+python /git/zeroclaw/preload.py --dockerized=true

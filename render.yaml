@@ -1,8 +1,8 @@
-# Render Blueprint for Agent ZERO V 2.2
+# Render Blueprint for ZeroClaw
 # Save as render.yaml in your repo
 
 resources:
-  - name: agent-zero-x
+  - name: zeroclaw
     type: web
     region: oregon
     plan: free
@@ -12,9 +12,9 @@ resources:
       url: agent0ai/agent-zero:latest
     
     envVars:
-      - key: A0_BRAND_NAME
-        value: Agent ZERO V 2.2
-      - key: A0_INACTIVITY_TIMEOUT
+      - key: ZC_BRAND_NAME
+        value: ZeroClaw
+      - key: ZC_INACTIVITY_TIMEOUT
         value: "3600"
       # Add your API keys in Render dashboard (don't commit them here)
       # - key: OPENAI_API_KEY

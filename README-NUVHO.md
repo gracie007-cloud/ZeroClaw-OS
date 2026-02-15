@@ -1,10 +1,10 @@
-# Agent ZERO V 2.2 - Agent ZERO V 2.2 Fork
+# ZeroClaw - ZeroClaw Fork
 
-A forked and rebranded version of [Agent ZERO V 2.2](https://github.com/agent0ai/agent-zero-x) for the Nuvho ecosystem.
+A forked and rebranded version of [ZeroClaw](https://github.com/agent0ai/zeroclaw) for the Nuvho ecosystem.
 
 ## What's Changed
 
-- Rebranded to Agent ZERO V 2.2
+- Rebranded to ZeroClaw
 - Custom UI theming (see `webui/`)
 - Pre-configured for Nuvho integration
 - Additional skills for your use cases
@@ -13,8 +13,8 @@ A forked and rebranded version of [Agent ZERO V 2.2](https://github.com/agent0ai
 
 ### Local
 ```bash
-docker pull nuvho/agent-zero-x
-docker run -p 50001:80 nuvho/agent-zero-x
+docker pull nuvho/zeroclaw
+docker run -p 50001:80 nuvho/zeroclaw
 ```
 
 ### Cloud (Render)
@@ -25,7 +25,7 @@ docker run -p 50001:80 nuvho/agent-zero-x
 
 ## Credits
 
-Original: [Agent ZERO V 2.2](https://github.com/agent0ai/agent-zero-x) by Jan Tomasek
+Original: [ZeroClaw](https://github.com/agent0ai/zeroclaw) by Jan Tomasek
 
 ## License
 

@@ -1,25 +1,25 @@
 <div align="center">
 
-# `Agent ZERO V 2.2`
+# `ZeroClaw`
 
 <p align="center">
-    <a href="https://trendshift.io/repositories/11745" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11745" alt="frdel%2Fagent-zero-x | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+    <a href="https://trendshift.io/repositories/11745" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11745" alt="frdel%2Fzeroclaw | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </p>
 
-[![Agent ZERO V 2.2 Website](https://img.shields.io/badge/Website-agent--zero.ai-0A192F?style=for-the-badge&logo=vercel&logoColor=white)](https://agent-zero-x.ai) [![Thanks to Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Thanks%20to%20Sponsors-FF69B4?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/agent0ai) [![Follow on X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Agent0ai) [![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B8KZKNsPpj) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@AgentZeroFW) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jan-tomasek/) [![Follow on Warpcast](https://img.shields.io/badge/Warpcast-Follow-5A32F3?style=for-the-badge)](https://warpcast.com/agent-zero-x)
+[![ZeroClaw Website](https://img.shields.io/badge/Website-agent--zero.ai-0A192F?style=for-the-badge&logo=vercel&logoColor=white)](https://zeroclaw.ai) [![Thanks to Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Thanks%20to%20Sponsors-FF69B4?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/agent0ai) [![Follow on X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Agent0ai) [![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B8KZKNsPpj) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@AgentZeroFW) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jan-tomasek/) [![Follow on Warpcast](https://img.shields.io/badge/Warpcast-Follow-5A32F3?style=for-the-badge)](https://warpcast.com/zeroclaw)
 
 
 ## Documentation:
 
 [Introduction](#a-personal-organic-agentic-framework-that-grows-and-learns-with-you) •
 [Installation](./docs/setup/installation.md) •
-[How to update](./docs/setup/installation.md#how-to-update-agent-zero-x) <br>
+[How to update](./docs/setup/installation.md#how-to-update-zeroclaw) <br>
 [Development Setup](./docs/setup/dev-setup.md) •
 [Usage](./docs/guides/usage.md)
 
 Or see DeepWiki generated documentation:
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/agent0ai/agent-zero-x)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/agent0ai/zeroclaw)
 
 </div>
 
@@ -43,25 +43,25 @@ Or see DeepWiki generated documentation:
 
 
 
-- Agent ZERO V 2.2 is not a predefined agentic framework. It is designed to be dynamic, organically growing, and learning as you use it.
-- Agent ZERO V 2.2 is fully transparent, readable, comprehensible, customizable, and interactive.
-- Agent ZERO V 2.2 uses the computer as a tool to accomplish its (your) tasks.
+- ZeroClaw is not a predefined agentic framework. It is designed to be dynamic, organically growing, and learning as you use it.
+- ZeroClaw is fully transparent, readable, comprehensible, customizable, and interactive.
+- ZeroClaw uses the computer as a tool to accomplish its (your) tasks.
 
 # ⚙️ Installation
 
-Click to open a video to learn how to install Agent ZERO V 2.2:
+Click to open a video to learn how to install ZeroClaw:
 
 [![Easy Installation guide](/docs/res/easy_ins_vid.png)](https://www.youtube.com/watch?v=w5v5Kjx51hs)
 
-A detailed setup guide for Windows, macOS, and Linux with a video can be found in the Agent ZERO V 2.2 Documentation at [this page](./docs/setup/installation.md).
+A detailed setup guide for Windows, macOS, and Linux with a video can be found in the ZeroClaw Documentation at [this page](./docs/setup/installation.md).
 
 ### ⚡ Quick Start
 
 ```bash
 # Pull and run with Docker
 
-docker pull agent0ai/agent-zero-x
-docker run -p 50001:80 agent0ai/agent-zero-x
+docker pull agent0ai/zeroclaw
+docker run -p 50001:80 agent0ai/zeroclaw
 
 # Visit http://localhost:50001 to start
 ```
@@ -71,18 +71,18 @@ docker run -p 50001:80 agent0ai/agent-zero-x
 
 1. **General-purpose Assistant**
 
-- Agent ZERO V 2.2 is not pre-programmed for specific tasks (but can be). It is meant to be a general-purpose personal assistant. Give it a task, and it will gather information, execute commands and code, cooperate with other agent instances, and do its best to accomplish it.
+- ZeroClaw is not pre-programmed for specific tasks (but can be). It is meant to be a general-purpose personal assistant. Give it a task, and it will gather information, execute commands and code, cooperate with other agent instances, and do its best to accomplish it.
 - It has a persistent memory, allowing it to memorize previous solutions, code, facts, instructions, etc., to solve tasks faster and more reliably in the future.
 
 ![Agent 0 Working](/docs/res/ui_screen2.png)
 
 2. **Computer as a Tool**
 
-- Agent ZERO V 2.2 uses the operating system as a tool to accomplish its tasks. It has no single-purpose tools pre-programmed. Instead, it can write its own code and use the terminal to create and use its own tools as needed.
+- ZeroClaw uses the operating system as a tool to accomplish its tasks. It has no single-purpose tools pre-programmed. Instead, it can write its own code and use the terminal to create and use its own tools as needed.
 - The only default tools in its arsenal are online search, memory features, communication (with the user and other agents), and code/terminal execution. Everything else is created by the agent itself or can be extended by the user.
 - Tool usage functionality has been developed from scratch to be the most compatible and reliable, even with very small models.
-- **Default Tools:** Agent ZERO V 2.2 includes tools like knowledge, code execution, and communication.
-- **Creating Custom Tools:** Extend Agent ZERO V 2.2's functionality by creating your own custom tools.
+- **Default Tools:** ZeroClaw includes tools like knowledge, code execution, and communication.
+- **Creating Custom Tools:** Extend ZeroClaw's functionality by creating your own custom tools.
 - **Skills (SKILL.md Standard):** Skills are contextual expertise loaded dynamically when relevant. They use the open SKILL.md standard (developed by Anthropic), making them compatible with Claude Code, Cursor, Goose, OpenAI Codex CLI, and GitHub Copilot.
 
 3. **Multi-agent Cooperation**
@@ -140,11 +140,11 @@ docker run -p 50001:80 agent0ai/agent-zero-x
 
 ## 👀 Keep in Mind
 
-1. **Agent ZERO V 2.2 Can Be Dangerous!**
+1. **ZeroClaw Can Be Dangerous!**
 
-- With proper instruction, Agent ZERO V 2.2 is capable of many things, even potentially dangerous actions concerning your computer, data, or accounts. Always run Agent ZERO V 2.2 in an isolated environment (like Docker) and be careful what you wish for.
+- With proper instruction, ZeroClaw is capable of many things, even potentially dangerous actions concerning your computer, data, or accounts. Always run ZeroClaw in an isolated environment (like Docker) and be careful what you wish for.
 
-2. **Agent ZERO V 2.2 Is Prompt-based.**
+2. **ZeroClaw Is Prompt-based.**
 
 - The whole framework is guided by the **prompts/** folder. Agent guidelines, tool instructions, messages, utility AI functions, it's all there.
 
@@ -158,7 +158,7 @@ docker run -p 50001:80 agent0ai/agent-zero-x
 | [Guides](./docs/guides/) | Step-by-step guides: Usage, Projects, API Integration, MCP Setup, A2A Setup |
 | [Development Setup](./docs/setup/dev-setup.md) | Development and customization |
 | [WebSocket Infrastructure](./docs/developer/websockets.md) | Real-time WebSocket handlers, client APIs, filtering semantics, envelopes |
-| [Extensions](./docs/developer/extensions.md) | Extending Agent ZERO V 2.2 |
+| [Extensions](./docs/developer/extensions.md) | Extending ZeroClaw |
 | [Connectivity](./docs/developer/connectivity.md) | External API endpoints, MCP server connections, A2A protocol |
 | [Architecture](./docs/developer/architecture.md) | System design and components |
 | [Contributing](./docs/guides/contribution.md) | How to contribute |
@@ -320,8 +320,8 @@ docker run -p 50001:80 agent0ai/agent-zero-x
 ### v0.8.5 - **MCP Server + Client**
 [Release video](https://youtu.be/pM5f4Vz3_IQ)
 
-- Agent ZERO V 2.2 can now act as MCP Server
-- Agent ZERO V 2.2 can use external MCP servers as tools
+- ZeroClaw can now act as MCP Server
+- ZeroClaw can use external MCP servers as tools
 
 ### v0.8.4.1 - 2
 Default models set to gpt-4.1
@@ -387,6 +387,6 @@ Default models set to gpt-4.1
 
 ## 🤝 Community and Support
 
-- [Join our Discord](https://discord.gg/B8KZKNsPpj) for live discussions or [visit our Skool Community](https://www.skool.com/agent-zero-x).
+- [Join our Discord](https://discord.gg/B8KZKNsPpj) for live discussions or [visit our Skool Community](https://www.skool.com/zeroclaw).
 - [Follow our YouTube channel](https://www.youtube.com/@AgentZeroFW) for hands-on explanations and tutorials
-- [Report Issues](https://github.com/agent0ai/agent-zero-x/issues) for bug fixes and features
+- [Report Issues](https://github.com/agent0ai/zeroclaw/issues) for bug fixes and features

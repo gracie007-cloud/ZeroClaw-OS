@@ -1,6 +1,6 @@
-# Agent ZERO V 2.2 Installation Guide
+# ZeroClaw Installation Guide
 
-> **Purpose:** Step-by-step guide for deploying Agent ZERO V 2.2 instances on VPS/dedicated servers  
+> **Purpose:** Step-by-step guide for deploying ZeroClaw instances on VPS/dedicated servers  
 > **Author:** Auto-generated from deployment experience  
 > **Last Updated:** December 21 2025  
 > **Compatibility:** Docker-capable Linux servers (AlmaLinux, CentOS, Rocky, Ubuntu, Debian)
@@ -11,7 +11,7 @@
 
 1. [Prerequisites](#prerequisites)
 2. [Docker Installation](#docker-installation)
-3. [Agent ZERO V 2.2 Container Deployment](#agent-zero-x-container-deployment)
+3. [ZeroClaw Container Deployment](#zeroclaw-container-deployment)
 4. [Apache Reverse Proxy Configuration](#apache-reverse-proxy-configuration)
 5. [SSL/TLS Configuration](#ssltls-configuration)
 6. [Authentication Setup](#authentication-setup)
@@ -118,7 +118,7 @@ docker run hello-world
 
 ---
 
-## Agent ZERO V 2.2 Container Deployment
+## ZeroClaw Container Deployment
 
 ### Step 1: Create Directory Structure
 
@@ -139,13 +139,13 @@ mkdir -p ${NUVHO_PATH}/logs
 ```bash
 # Create .env file with authentication
 cat > ${NUVHO_PATH}/.env << 'EOF'
-# Agent ZERO V 2.2 Configuration
+# ZeroClaw Configuration
 # Authentication (REQUIRED for web access)
 AUTH_LOGIN=your_username_here
 AUTH_PASSWORD=your_secure_password_here
 
 # Optional: Additional configuration
-# See Agent ZERO V 2.2 documentation for all options
+# See ZeroClaw documentation for all options
 EOF
 ```
 
@@ -170,10 +170,10 @@ NUVHO_PATH="/opt/${NUVHO_NAME}"
 NUVHO_PORT="50080"
 
 # Pull latest image
-docker pull agent0ai/agent-zero-x:latest
+docker pull agent0ai/zeroclaw:latest
 
 # Run container
-docker run -d   --name ${NUVHO_NAME}   --restart unless-stopped   -p ${NUVHO_PORT}:80   -v ${NUVHO_PATH}/.env:/a0/.env   -v ${NUVHO_PATH}/usr:/a0/usr   agent0ai/agent-zero-x:latest
+docker run -d   --name ${NUVHO_NAME}   --restart unless-stopped   -p ${NUVHO_PORT}:80   -v ${NUVHO_PATH}/.env:/a0/.env   -v ${NUVHO_PATH}/usr:/a0/usr   agent0ai/zeroclaw:latest
 ```
 
 ### Step 5: Verify Container
@@ -211,7 +211,7 @@ httpd -M | grep -E "proxy|rewrite|ssl"
 Create `/etc/apache2/sites-available/a0-instance.conf`:
 
 ```apache
-# Agent ZERO V 2.2 Reverse Proxy Configuration
+# ZeroClaw Reverse Proxy Configuration
 # Instance: a0-instance
 # Domain: a0.example.com
 
@@ -269,7 +269,7 @@ systemctl reload apache2
 Edit `/etc/httpd/conf/extra/httpd-includes.conf`:
 
 ```apache
-# Agent ZERO V 2.2 Proxy Configuration
+# ZeroClaw Proxy Configuration
 # Instance: a0-instance
 # Domain: a0.example.com
 # Note: Use specific IP, not wildcards, for DirectAdmin compatibility
@@ -495,7 +495,7 @@ curl -I https://a0.example.com/
 
 # 7. Test login page loads
 curl -s https://a0.example.com/login | grep -i "<title>"
-# Expected: <title>Login - Agent ZERO V 2.2</title>
+# Expected: <title>Login - ZeroClaw</title>
 ```
 
 ### WebSocket Verification
@@ -627,18 +627,18 @@ docker exec a0-instance cat /a0/.env
 
 ## Maintenance & Updates
 
-### Updating Agent ZERO V 2.2
+### Updating ZeroClaw
 
 ```bash
 # Pull latest image
-docker pull agent0ai/agent-zero-x:latest
+docker pull agent0ai/zeroclaw:latest
 
 # Stop and remove old container (data persists in volumes)
 docker stop a0-instance
 docker rm a0-instance
 
 # Recreate with same settings
-docker run -d   --name a0-instance   --restart unless-stopped   -p 50080:80   -v /opt/a0-instance/.env:/a0/.env   -v /opt/a0-instance/usr:/a0/usr   -v /opt/agent-zero-x:latest
+docker run -d   --name a0-instance   --restart unless-stopped   -p 50080:80   -v /opt/a0-instance/.env:/a0/.env   -v /opt/a0-instance/usr:/a0/usr   -v /opt/zeroclaw:latest
 ```
 
 ### Backup Strategy
@@ -726,7 +726,7 @@ curl -I https://your-domain.com/login
 ### .env Template
 
 ```bash
-# Agent ZERO V 2.2 Configuration Template
+# ZeroClaw Configuration Template
 # Copy and customize for each instance
 
 # Authentication (REQUIRED for production)
@@ -734,7 +734,7 @@ AUTH_LOGIN=your_username
 AUTH_PASSWORD=your_secure_password
 
 # Optional: Additional settings
-# Refer to Agent ZERO V 2.2 documentation for all options
+# Refer to ZeroClaw documentation for all options
 ```
 
 ---
@@ -766,6 +766,6 @@ Each instance needs:
 
 ---
 
-*This guide comes from successful Agent ZERO V 2.2 deployments across DirectAdmin and standard Linux environments.*
+*This guide comes from successful ZeroClaw deployments across DirectAdmin and standard Linux environments.*
 
 Contributed by @hurtdidit in the Nuvho Community.

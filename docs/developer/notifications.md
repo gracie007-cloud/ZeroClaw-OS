@@ -1,6 +1,6 @@
-# Agent ZERO V 2.2 Notifications
+# ZeroClaw Notifications
 
-Quick guide for using the notification system in Agent ZERO V 2.2.
+Quick guide for using the notification system in ZeroClaw.
 
 > [!TIP]
 > Notifications pair well with scheduled tasks. See [Tasks & Scheduling](../guides/usage.md#tasks--scheduling) for automation patterns.
