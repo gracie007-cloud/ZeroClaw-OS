@@ -1,19 +1,17 @@
-# ZeroClaw Dockerfile
+# ZeroClaw - Simplified Dockerfile for Render
 FROM agent0ai/agent-zero:latest
 
-# Set branding
-ENV ZC_BRAND_NAME=ZeroClaw
-
-# Override port binding to work with Render
-ENV WEB_UI_PORT=80
+# Force the web UI to bind to all interfaces
 ENV WEB_UI_HOST=0.0.0.0
 ENV WEB_HOST=0.0.0.0
 ENV HOST=0.0.0.0
+ENV ZC_BRAND_NAME=ZeroClaw
 
-# Expose port
+# Patch the run_ui.py to ensure it binds to 0.0.0.0
+RUN sed -i 's/host =.*/host = "0.0.0.0"/g' /a0/python/helpers/runtime.py 2>/dev/null || true
+
+# Override the CMD to run web only on port 80
 EXPOSE 80
 
-# Replace the initialization script to force 0.0.0.0 binding
-RUN sed -i 's/localhost/0.0.0.0/g' /exe/run_A0.sh || true
-
-CMD ["/exe/run_A0.sh"]
+# Run only the web UI, not the full supervisor stack
+CMD ["bash", "-c", "cd /a0 && python3 run_ui.py"]
